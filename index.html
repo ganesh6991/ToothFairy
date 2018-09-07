@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CareMed</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="CareMed demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link href='styles/form-bootstrap.min.css' media='all' rel='stylesheet'>
+<link href="styles/form-style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="styles/form-animate.min.css"> 
+
+<link rel="stylesheet" type="text/css" href="styles/contact.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+
+
+<link rel="stylesheet" href="styles/bootstrap.min.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header trans_200">
+		
+		<!-- Top Bar -->
+		<!-- <div class="top_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+							<div class="top_bar_item"><a href="#">FAQ</a></div>
+							<div class="top_bar_item"><a href="#">Request an Appointment</a></div>
+							<div class="emergencies  d-flex flex-row align-items-center justify-content-start ml-auto">For Emergencies: +563 47558 623</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- Header Content -->
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="logo_content d-flex flex-column align-items-start justify-content-center">
+						<img src="images/tooth-fairy-logo.png" width="100px" height="70px">
+					</div>
+					</div>
+					<div class="col-md-8">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<nav class="main_nav ml-auto">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#about">About us</a></li>
+									<li><a href="#gallery">Gallery</a></li>
+									<li><a href="#services">Services</a></li>
+									<li><a href="#faq">Faq's</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Logo -->
+<!-- 		<div class="logo_container_outer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="logo_container">
+							<a href="#">
+								<div class="logo_content d-flex flex-column align-items-start justify-content-center">
+									<img src="images/tooth-fairy-logo.png" width="150px" height="100px">
+									<div class="logo_line"></div>
+									<div class="logo d-flex flex-row align-items-center justify-content-center">
+										<div class="logo_text">Care<span>Med</span></div>
+										<div class="logo_box">+</div>
+									</div>
+									<div class="logo_sub">Health Care Center</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div> -->
+
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="menu_item menu_mm"><a href="index.html">Home</a></li>
+					<li class="menu_item menu_mm"><a href="#about">About us</a></li>
+					<li class="menu_item menu_mm"><a href="#services">Services</a></li>
+					<li class="menu_item menu_mm"><a href="#faq">Faq's</a></li>
+					<li class="menu_item menu_mm"><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="menu_extra xs-hidden">
+				<div class="menu_appointment"><a href="#">Request an Appointment</a></div>
+				<div class="menu_emergencies">For Emergencies: +563 47558 623</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<form class='form animate-form' id='form1' action="mail.php" method="post">
+						<p class="w3agileits">Request for Call Back</p>
+						<div class='form-group has-feedback w3ls'>
+						<label class='control-label sr-only' for='username'>Username</label> 
+						<input class='form-control' id='username' name='name' placeholder='Username' type='text'required>
+						<span class='glyphicon glyphicon-ok form-control-feedback'></span>
+						</div>
+							<div class='form-group has-feedback wthree'>
+								<label class='control-label sr-only' for='email'>Email address</label> 
+								<input class='form-control' id='email' name='email' placeholder='Email address' type='text'><span class='glyphicon glyphicon-ok form-control-feedback'required></span>
+							</div>
+							<div class='form-group has-feedback agile'>
+								<label class='control-label sr-only' for='phone'>Mobile No.</label> 
+								<input class='form-control w3l' id='phone' name='phone' placeholder='Mobile Number' type='tel'required><span class='glyphicon glyphicon-ok form-control-feedback'></span>
+							</div>
+							<div class='form-group has-feedback agile'>
+								<label class='control-label sr-only' for='phone'>Mobile No.</label> 
+								<select class='form-control w3l' placeholder='--- select Timeings ---'  name='option'>
+									<option value="select" disabled>--- Select Timeings ---</option>
+  									<option value="10:30AM – 2:00PM">10:30AM – 2:00PM</option>
+  									<option value="4:30PM – 8:00PM">4:30PM – 8:00PM</option>
+								</select>  
+							</div>
+							<div class='submit w3-agile'>
+								<input class='btn btn-lg' type='submit' name="submit" value='SUBMIT'>
+							</div>
+						</form>
+					</div>
+			</div>
+			<!-- Slider Progress -->
+			<div class="home_slider_progress"></div>
+		</div>
+	</div>
+
+	<!-- 3 Boxes -->
+
+	<div class="boxes">
+		<div class="container">
+			<div class="row">
+				
+				<!-- Box -->
+				<div class="col-lg-4 box_col">
+					<div class="box working_hours">
+						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width:29px; height:29px;"><img src="images/alarm-clock.svg" alt=""></div></div>
+						<div class="box_title">Working Hours</div>
+						<div class="working_hours_list">
+							<ul>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div>Monday – Friday : </div>
+									<div class="ml-auto">10:30AM – 2:00PM</div>
+								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<!-- <div>Saturday</div> -->
+									<div class="ml-auto">4:30PM – 8:00PM</div>
+								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div>Consultation by Appointment</div>
+									<!-- <div class="ml-auto">9.30 – 15.00</div> -->
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Box -->
+				<div class="col-lg-4 box_col">
+					<div class="box box_appointments">
+						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 37px; height:37px; margin-left:-4px;"><img src="images/bell.svg" alt=""></div></div>
+						<div class="box_title">Daily Tips</div>
+						<div class="box_text">One of the easiest steps to do to help your teeth keep clean. When brushing your teeth, position the bristles at an angle of 45 degrees ...</div>
+					</div>
+				</div>
+
+				<!-- Box -->
+				<div class="col-lg-4 box_col">
+					<div class="box box_emergency">
+						<div class="box_icon d-flex flex-column align-items-start justify-content-center"><div style="width: 29px; height:29px;"><img src="images/phone-call.svg" alt=""></div></div>
+						<div class="box_title">Appointments</div>
+						<div class="box_phone">+91 7569788525</div>
+						<div class="box_emergency_text">Approximate wait time 2 to 4 days...</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- About -->
+
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row row-lg-eq-height">
+				
+				<!-- About Content -->
+				<div class="col-lg-7">
+					<div class="about_content">
+						<div class="section_title"><h2>About Us</h2></div>
+						<div class="about_text">
+							<p>A Gold medallist from Rajiv Gandhi University of Health Sciences, Dr. Tejas Melkote has been working with children for the past 14 years for his experience, he was awarded as best child dentist. His strong sense of empathy and compassion instils positive attitude in children towards their Oral health. He puts children at ease with his humour and kind nature and makes their dental office experience pleasant and interesting.</p>
+						</div>
+						<div class="button about_button">
+							<a href="http://toothfairy.co.in/about-us/">read more</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- About Image -->
+				<div class="col-lg-5 xs-hidden">
+					<div class="about_image"><img style="width: 479px;" src="images/about1.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Departments -->
+
+	<div class="departments" id="gallery">
+		<div class="departments_background parallax-window" data-parallax="scroll" data-image-src="images/departments.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title section_title_light" style="    padding-bottom: 20px;"><h2>Our Gallery</h2></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row">
+		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+		                   data-image="images/gallery/image1.jpg"
+		                   data-target="#image-gallery">
+		                    <img class="img-thumbnail"
+		                         src="images/gallery/image1.jpg"
+		                         alt="Another alt text">
+		                </a>
+		            </div>
+		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+		                   data-image="images/gallery/image2.jpg"
+		                   data-target="#image-gallery">
+		                    <img class="img-thumbnail"
+		                         src="images/gallery/image2.jpg"
+		                         alt="Another alt text">
+		                </a>
+		            </div>
+
+		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+		                   data-image="images/gallery/image3.jpg"
+		                   data-target="#image-gallery">
+		                    <img class="img-thumbnail"
+		                         src="images/gallery/image3.jpg"
+		                         alt="Another alt text">
+		                </a>
+		            </div>
+		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+		                   data-image="images/gallery/image4.jpg"
+		                   data-target="#image-gallery">
+		                    <img class="img-thumbnail"
+		                         src="images/gallery/image4.jpg"
+		                         alt="Another alt text">
+		                </a>
+		            </div>
+		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+		                   data-image="images/gallery/image5.jpg"
+		                   data-target="#image-gallery">
+		                    <img class="img-thumbnail"
+		                         src="images/gallery/image5.jpg"
+		                         alt="Another alt text">
+		                </a>
+		            </div>
+
+
+
+		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+		                   data-image="images/gallery/image6.jpg"
+		                   data-target="#image-gallery">
+		                    <img class="img-thumbnail"
+		                         src="images/gallery/image6.jpg"
+		                         alt="Another alt text">
+		                </a>
+		            </div>
+		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+		                   data-image="images/gallery/image7.jpg"
+		                   data-target="#image-gallery">
+		                    <img class="img-thumbnail"
+		                         src="images/gallery/image7.jpg"
+		                         alt="Another alt text">
+		                </a>
+		            </div>
+		            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+		                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+		                   data-image="images/gallery/image8.jpg"
+		                   data-target="#image-gallery">
+		                    <img class="img-thumbnail"
+		                         src="images/gallery/image8.jpg"
+		                         alt="Another alt text">
+		                </a>
+		            </div>
+		        </div>
+
+
+		        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		            <div class="modal-dialog modal-lg">
+		                <div class="modal-content">
+		                    <div class="modal-header">
+		                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+		                        </button>
+		                    </div>
+		                    <div class="modal-body">
+		                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+		                    </div>
+		                    <div class="modal-footer">
+		                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+		                        </button>
+
+		                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+		                        </button>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+			</div>
+
+			<!-- <div class="row departments_row row-md-eq-height"> -->
+				
+				<!-- Department -->
+				<!-- <div class="col-lg-3 col-md-6 dept_col">
+					<div class="dept">
+						<div class="dept_image"><img src="images/dept_1.jpg" alt=""></div>
+						<div class="dept_content text-center">
+							<div class="dept_title">plastic surgery</div>
+							<div class="dept_subtitle">Dr. James Smith</div>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- Department -->
+				<!-- <div class="col-lg-3 col-md-6 dept_col">
+					<div class="dept">
+						<div class="dept_image"><img src="images/dept_2.jpg" alt=""></div>
+						<div class="dept_content text-center">
+							<div class="dept_title">gastroenterology</div>
+							<div class="dept_subtitle">Dr. Gunter Roscoe</div>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- Department -->
+				<!-- <div class="col-lg-3 col-md-6 dept_col">
+					<div class="dept">
+						<div class="dept_image"><img src="images/dept_3.jpg" alt=""></div>
+						<div class="dept_content text-center">
+							<div class="dept_title">dentistry</div>
+							<div class="dept_subtitle">Dr. Maria Williams</div>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- Department -->
+				<!-- <div class="col-lg-3 col-md-6 dept_col">
+					<div class="dept">
+						<div class="dept_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dap ibus massa. Pellen tesque in luctus ex.</p>
+						</div>
+						<div class="button dept_button"><a href="#">read more</a></div>
+					</div>
+				</div> -->
+			<!-- </div> -->
+		</div>
+	</div>
+
+	<!-- Services -->
+
+	<div class="services" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title"><h2>Our Services</h2></div>
+				</div>
+			</div>
+			<div class="row services_row">
+				
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="http://toothfairy.co.in/hospital-based-dentistry/">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="images/service/service_1.svg" alt=""></div>
+							<div class="service_title trans_200">Hospital Based Dentistry</div>
+							<div class="service_text">
+								<p>Hospital Based Dentistry is a controlled state of unconsciousness that eliminates awareness, movement and discomfort during dental treatment. It is reserved for children (and adults) with extensive dental needs that are extremely uncooperative, fearful or anxious.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="http://toothfairy.co.in/preventive-dentistry-for-kids/">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="images/service/service_2.svg" alt=""></div>
+							<div class="service_title trans_200">Preventive Dentistry</div>
+							<div class="service_text">
+								<p>Traditionally, cavities were treated as a stand-alone disease. Not a lot was understood about the causation and progress of cavities; and often patients returned to the dentist every few months with ‘new’ cavities!</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="http://toothfairy.co.in/orthodontics-dental-doctors/">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="images/service/service_3.svg" alt=""></div>
+							<div class="service_title trans_200">Orthodontics</div>
+							<div class="service_text">
+								<p>Orthodontics is the branch of dentistry that deals with alignment of teeth and monitoring normal growth and development of the jaws.Toothfairy has the best dental doctor specializes in treating patients with improper alignment of teeth.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="http://toothfairy.co.in/operativesurgical-dentistry/">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="images/service/service_4.svg" alt=""></div>
+							<div class="service_title trans_200">Operative/Surgical Dentistry</div>
+							<div class="service_text">
+								<p>The Diagnostic Process is based on a strong evidence-base of scientific journals which are periodically updated and accessed in order to make customised treatment plans.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="http://toothfairy.co.in/intraoral-diagnostic-radiography/">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="images/service/service_5.svg" alt=""></div>
+							<div class="service_title trans_200">Intraoral Diagnostic Radiography</div>
+							<div class="service_text">
+								<p>At Tooth Fairy Dental Care, the latest RVG technology from SoproTM (Sopix-2TM Radio Visiogram) makes it extremely safe for the patients with about 90% less radiation compared to conventional film radiography.</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service -->
+<!-- 				<div class="col-lg-4 col-md-6 service_col">
+					<a href="services.html">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="images/service_6.svg" alt=""></div>
+							<div class="service_title trans_200">Biochemistry</div>
+							<div class="service_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
+							</div>
+						</div>
+					</a>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Call to action -->
+
+	<div class="cta" id="faq">
+		<div class="cta_background parallax-window" data-parallax="scroll" data-image-src="images/cta.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title section_title_light" style="    padding-bottom: 20px;"><h2>Frequently asked questions (FAQ)</h2></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="example1">
+						<div class="panel panel-primary">
+				          <div class="panel-heading" data-acc-link="demo1">Who is a Pediatric Dentist?</div>
+				          <div class="panel-body acc-open" data-acc-content="demo1">
+				            <p>Children are NOT small adults! They have specific dental needs based on thier age and development. These needs are best understood and met by a Pediatric Dentist who specializes in areas of child psychology, behaviour management and Clinical Pediatric Dentistry. He/She undergoes 3 years of specialty training in addition to 5 years of Dental School.</p>
+				          </div>
+				        </div>
+				        <div class="panel panel-primary">
+				          <div class="panel-heading" data-acc-link="demo2">What is the "Tooth Fairy" and how is it different from other dental care centers?</div>
+				          <div class="panel-body" data-acc-content="demo2">
+				            <p>Tooth Fairy is the first exclusive Pediatric Dental Care Centers in the twin cities. Founded in 2010, it caters to various needs of children by specialists</p>
+				          </div>
+				        </div>
+
+				        <div class="panel panel-primary">
+				          <div class="panel-heading" data-acc-link="demo3">What is a "Dental Home"?</div>
+				          <div class="panel-body" data-acc-content="demo3">
+				            <p>A Dental Home is a continual dental care guidance center which caters to prevention, treatment and referral care for children. It is more like a “family dentist” for children who serves as a constant guide throughout childhood.Every child should have a dental home by the age of 12 months.</p>
+				          </div>
+				        </div>
+
+				        <div class="panel panel-primary">
+				          <div class="panel-heading" data-acc-link="demo4">
+				            <h3 class="panel-title">What services does The Tooth Fairy Provide?</h3>
+				          </div>
+				          <div class="panel-body" data-acc-content="demo4">
+							<p>• Pain Management<br>
+							• Cavity-prevention<br>
+							• Replacement of Broken Teeth with fillings</p>
+							<p>Treatment of Infected teeth with Pulp Treatment (Root Canal Treatment)</p>
+							<p>• Orthodontics (braces)<br>
+							• Management of Dental Injuries<br>
+							• Management of children with Special Healthcare Needs<br>
+							• Oral Surgical services and Hospital Dentistry</p>
+				          </div>
+				        </div>
+			      	</div>
+				</div>
+ 				<div class="col-md-6">
+					<div class="example1">
+			        <div class="panel panel-primary">
+			          <div class="panel-heading" data-acc-link="demo5">What is the importance of milk teeth? They will fall anyway...</div>
+			          <div class="panel-body acc-open" data-acc-content="demo5">
+			            <p>Milk Teeth are very important for several reasons.<br>
+							1. They help in Chewing food, Pronounciation, Cosmetics<br>
+							2. They help in guiding the permanent teeth to erupt in a favourble form 3. They help in maintaining space required for the permanent teeth<br>
+							4. They help in favourable growth and development of mid-face and lower face</p>
+			          </div>
+			        </div>
+
+			        <div class="panel panel-primary">
+			          <div class="panel-heading" data-acc-link="demo6">When do milk teeth fall? Do they fall all at once?</div>
+			          <div class="panel-body" data-acc-content="demo6">
+			            <p>Milk Teeth have a specific sequence of eruption and exfoliation. They do not all come at once or shed at once.<br>(Image)</p>
+			          </div>
+			        </div>
+
+			        <div class="panel panel-primary">
+			          <div class="panel-heading" data-acc-link="demo7">What happens when milk teeth are lost early?</div>
+			          <div class="panel-body" data-acc-content="demo7">
+			            <p>Milk teeth which are lost early lead to severe consequences in the permanent dentition; leading to permanent teeth that are not erupted in a straight line. This will worsen the bite pattern and lead to situations where even braces (orhtodontics) at a later age will not be able to regain the ideal bite pattern and teeth position.</p>
+			          </div>
+			        </div>
+
+			        <div class="panel panel-primary">
+			          <div class="panel-heading" data-acc-link="demo8">
+			            <h3 class="panel-title">When should my child visit a dentist?</h3>
+			          </div>
+			          <div class="panel-body" data-acc-content="demo8">
+			            <p>Every child must have a Dental Home established by the age of 12 months. A Dental Home is a continual monitoring by a dentist where in the dentist priovides Preventive, Interceptive, Therapeutic and Emergency dental care from Infacny through Adolescence. A dental home is a cointinual relationship of your child and his/her Pediatric Dentist; the dentist sees the child once every six months or more frequently if required and advices the parents on various aspects of childhood such as teething, oral habits, development of teeth jaws, need for braces (orthodontics), prevention of dental diseases and management of emergencies such as fractured teeth/jaws as a result of accident/trauma.</p>
+			          </div>
+			        </div>
+			      </div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- Contact -->
+
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="section_title"><h2>Get in touch</h2></div>
+			<div class="row">
+
+				<!-- Contact Info -->
+				<div class="col-lg-6 col-md-6 col-xs-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60910.94491134573!2d78.444123!3d17.414952!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8c068637d7cd4d81!2sTooth+Fairy+-+Dentistry+for+Kids!5e0!3m2!1sen!2sin!4v1535785786261" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+				<!-- Contact Form -->
+				<div class="col-lg-6 form_col">
+					<div class="contact_form_container">
+						<form action="mail.php" id="contact_form" class="contact_form" method="post">
+							<h3 class="text-center">Request for Call Back</h3>
+							<div class="input_container input_name"><input type="text" class="contact_input" name="name" placeholder="Name" required="required"></div>
+							<div class="input_container"><input type="email" class="contact_input" name="email" placeholder="E-mail" required="required"></div>
+							<div class="input_container"><input type="tel" class="contact_input" name="phone" placeholder="Mobile No." required="required"></div>
+							<div class="input_container">
+								<select class="contact_input" name="'option">
+									<option value="select" disabled>--- Select Timeings ---</option>
+  									<option value="10:30AM – 2:00PM">10:30AM – 2:00PM</option>
+  									<option value="4:30PM – 8:00PM">4:30PM – 8:00PM</option>
+								</select>
+							</div>
+							<input type="submit" style="padding: 14px;border-radius: 10px;" class="button contact_button" value="Submit" name="submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_container">
+			<div class="container">
+				<div class="row">
+					
+					<!-- Footer - About -->
+					<div class="col-lg-4 footer_col">
+						<div class="footer_about">
+							<div class="footer_logo_container">
+								<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+									<div class="logo_content">
+										<!-- <div class="logo d-flex flex-row align-items-center justify-content-center">
+											<div class="logo_text">Care<span>Med</span></div>
+											<div class="logo_box">+</div>
+										</div>
+										<div class="logo_sub">Health Care Center</div> -->
+										<img src="images/tooth-fairy-logo.png" width="300px" height=150px">
+									</div>
+								</a>
+							</div>
+							<div class="footer_about_text">
+								<p>Tooth Fairy is the first exclusive children's Dental center in Hyderabad.</p>
+							</div>
+							<ul class="footer_about_list">
+								<li><div class="footer_about_icon"><img src="images/phone-call.svg" alt=""></div><span>+91-8074348086</span></li>
+								<li><div class="footer_about_icon"><img src="images/envelope.svg" alt=""></div><span>ask@evident.co.in</span></li>
+								<li><div class="footer_about_icon"><img src="images/placeholder.svg" alt=""></div><span>Plot no 63, Gaffar Khan colony,Road no. 10,</span><span>Banjara Hills,Hyderabad, 500034</span></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer - Links -->
+					<div class="col-lg-4 footer_col">
+						<div class="footer_links footer_column">
+							<div class="footer_title">Quick Links</div>
+							<ul>
+								<li><a href="">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Patient Safety</a></li>
+								<li><a href="#">First Visit</a></li>
+								<li><a href="#">Our Partners</a></li>
+								<li><a href="#">FAQ'S</a></li>
+								<li><a href="#">Contact</a></li>
+
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer - News -->
+					<div class="col-lg-4 footer_col">
+						<div class="footer_news footer_column">
+							<div class="footer_title">Services</div>
+							<ul>
+								<li>
+									<div class="footer_news_title"><a href="news.html">Hospital Based Dentistry</a></div>
+									<!-- <div class="footer_news_date">March 10, 2018</div> -->
+								</li>
+								<li>
+									<div class="footer_news_title"><a href="news.html">Preventive Dentistry</a></div>
+									<!-- <div class="footer_news_date">March 10, 2018</div> -->
+								</li>
+								<li>
+									<div class="footer_news_title"><a href="news.html">Orthodontics</a></div>
+									<!-- <div class="footer_news_date">March 10, 2018</div> -->
+								</li>
+								<li>
+									<div class="footer_news_title"><a href="news.html">Operative/Surgical Dentistry</a></div>
+									<!-- <div class="footer_news_date">March 10, 2018</div> -->
+								</li>
+								<li>
+									<div class="footer_news_title"><a href="news.html">Intraoral Diagnostic Radiography</a></div>
+									<!-- <div class="footer_news_date">March 10, 2018</div> -->
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="copyright_content d-flex flex-lg-row flex-column align-items-lg-center justify-content-start">
+							<div class="cr"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is made by <a href="https://acutesoft.com" target="_blank">Acutesoft </a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+							<div class="footer_social ml-lg-auto">
+								<ul>
+									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</footer>
+</div>
+
+<!-- <script src="js/jquery-3.2.1.min.js"></script>  -->
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!------------------ Model Box ---------------------->
+
+<script type="text/javascript">
+	let modalId = $('#image-gallery');
+
+$(document)
+  .ready(function () {
+
+    loadGallery(true, 'a.thumbnail');
+
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+  });
+
+// build key actions
+$(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
+        }
+        break;
+
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
+        }
+        break;
+
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+
+</script>
+<!------------------ //Model Box ---------------------->
+
+
+<!------------------ Panel ---------------------->
+<script type="text/javascript">
+    $(function() {
+      $('.example1').accordion({ multiOpen: false });
+
+      $('.example2').accordion();
+
+      $('.example3').accordion();
+    });
+</script>
+<!------------------ //Panel ---------------------->
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
